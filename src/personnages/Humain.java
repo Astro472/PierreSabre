@@ -3,7 +3,7 @@ package personnages;
 public class Humain {
 	private String nom;
 	private String boissonFav;
-	private int argent;
+	protected int argent;
 	
 	public Humain(String nom, String boissonFav, int argent) {
 		super();
@@ -29,7 +29,7 @@ public class Humain {
 	}
 	
 	public void boire() {
-		parler("Mmmmm un bon verre de " + boissonFav + " ! GLOUPS !");
+		parler("Mmmmm, un bon verre de " + boissonFav + " ! GLOUPS !");
 	}
 	
 	public void acheter(String bien, int prix) {
