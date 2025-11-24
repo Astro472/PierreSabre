@@ -4,8 +4,8 @@ public class Humain {
 	private String nom;
 	private String boissonFav;
 	protected int argent;
-	private Humain[] memoire = new Humain[30];
-	private int nbMemoire = 0;
+	protected Humain[] memoire = new Humain[30];
+	protected int nbMemoire = 0;
 	
 	public Humain(String nom, String boissonFav, int argent) {
 		super();
@@ -44,11 +44,11 @@ public class Humain {
 		}
 	}
 	
-	private void gagnerArgent(int gain) {
+	protected void gagnerArgent(int gain) {
 		argent += gain;
 	}
 	
-	private void perdreArgent(int perte) {
+	protected void perdreArgent(int perte) {
 		 argent -= perte;
 	}
 	
