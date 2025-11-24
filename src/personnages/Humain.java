@@ -56,7 +56,7 @@ public class Humain {
 		direBonjour();
 	}
 	
-	private void memoriser(Humain humain) {
+	protected void memoriser(Humain humain) {
 		if (nbMemoire == 30) {
 			for (int i=0;i<nbMemoire-1;i++) {
 				memoire[i] = memoire[i+1];
