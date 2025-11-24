@@ -1,8 +1,8 @@
 package histoire;
 
 import personnages.Commercant;
-import personnages.Humain;
 import personnages.Ronin;
+import personnages.Samourai;
 import personnages.Yakuza;
 
 public class HistoireTP4 {
@@ -41,6 +41,7 @@ public class HistoireTP4 {
 		Commercant kumi = new Commercant("Kumi", 10);
 		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
 		Ronin roro = new Ronin("Roro", "shochu", 60);
+		Samourai akimoto = new Samourai("Akimoto", "saké", 80, "Miyamoto");
 		marco.faireConnaissanceAvec(roro);
 		marco.faireConnaissanceAvec(yakuLeNoir);
 		marco.faireConnaissanceAvec(chonin);
@@ -48,6 +49,9 @@ public class HistoireTP4 {
 		marco.listerConnaissances();
 		roro.listerConnaissances();
 		yakuLeNoir.listerConnaissances();
+		akimoto.faireConnaissanceAvec(marco);
+		akimoto.listerConnaissances();
+		akimoto.boire("thé");
 	}
 	
 }
